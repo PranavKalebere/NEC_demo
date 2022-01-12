@@ -1,7 +1,8 @@
 package com.example.project.entity;
 
+import com.example.project.service.CompanyService;
+
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -15,9 +16,7 @@ public class CompanyEntity
     private String companyName;
     private int netWorth;
 
-    public CompanyEntity()
-    {
-
+    public CompanyEntity() {
     }
 
     public CompanyEntity(String companyName, int netWorth) {
