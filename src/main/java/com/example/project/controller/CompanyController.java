@@ -15,18 +15,12 @@ public class CompanyController {
     public CompanyService companyService;
 
 
-
-
     @GetMapping("/companyentities")
     public String getcompanyentity(@RequestParam String name, @RequestParam int networth) throws Exception
     {
-
         return "Name "+name+" Net_Worth "+networth;
 
-
     }
-
-
 
     @PostMapping("/companyentities")
     public void createcompanyentity(@RequestParam("companyName") String name, @RequestParam("netWorth") int networth) throws Exception {
