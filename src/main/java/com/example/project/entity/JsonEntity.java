@@ -10,6 +10,8 @@ public class JsonEntity
     private int id;
     private String name;
 
+
+
     public JsonEntity() {
     }
 
