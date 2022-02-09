@@ -9,3 +9,4 @@ import org.springframework.stereotype.Repository;
 public interface CompanyRepo extends JpaRepository<CompanyEntity, Integer> {
 
 }
+

@@ -1,8 +1,7 @@
 package com.example.project.controller;
 
-import com.example.project.entity.JsonEntity;
+
 import com.example.project.service.JsonService;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

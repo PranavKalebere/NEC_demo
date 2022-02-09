@@ -3,25 +3,23 @@ package com.example.project.service;
 import org.springframework.stereotype.Component;
 
 @Component
-public class StackService
-{
-    int max=1000,top;
+public class StackService<i, a> {
+
+    int max = 1000, top, i;
     int[] a = new int[max];
-    public void insertdata(int num)
-    {
-        if (top>=(max-1))
-        {
+
+    public void insertdata(int num) {
+        if (top >= (max - 1)) {
             System.out.println("Stack is full");
-        }
-        else
-        {
-            //int x;
-            a[++top]=num;
+        } else {
+            a[++top] = num;
             System.out.println(num + " pushed into stack");
         }
-        for(int i = 0; i <= top; i++)
+        for (i = 1; i <= top; i++)
         {
+            System.out.println("Stack");
             System.out.println(a[i]);
         }
     }
+
 }
