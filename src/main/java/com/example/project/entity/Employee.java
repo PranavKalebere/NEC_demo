@@ -1,5 +1,6 @@
 package com.example.project.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,7 +10,9 @@ import javax.persistence.Table;
 public class Employee {
     @Id
     private int id;
+    @Column(name="employee_name")
     private String employeeName;
+    @Column(name="salary")
     private int salary;
 
     public Employee(String name, int salary) {

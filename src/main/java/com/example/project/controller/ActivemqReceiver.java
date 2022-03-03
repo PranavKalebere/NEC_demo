@@ -20,7 +20,7 @@ public class ActivemqReceiver extends RouteBuilder
         from("activemq:TestQueue")
                 .log(LoggingLevel.DEBUG, String.valueOf(log), "New message received")
                 .process(employeeProcessor)
-                .log(LoggingLevel.DEBUG, String.valueOf(log), "Message is successfully sent to the output queue")
+                .log(LoggingLevel.DEBUG, "Message is successfully sent to the output queue")
                 .end();
 
     }
