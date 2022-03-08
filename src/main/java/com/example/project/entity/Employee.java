@@ -1,5 +1,9 @@
 package com.example.project.entity;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,6 +11,9 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="EMPLOYEE")
+@Data
+@Getter
+@Setter
 public class Employee {
     @Id
     private int id;
@@ -15,12 +22,12 @@ public class Employee {
     @Column(name="salary")
     private int salary;
 
-    public Employee(String name, int salary) {
+  public Employee(String name, int salary) {
         this.employeeName = name;
         this.salary = salary;
     }
 
-    public int getId() {
+   /*  public int getId() {
         return id;
     }
 
@@ -43,7 +50,7 @@ public class Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
-
+    */
     public Employee() {
     }
 

@@ -27,6 +27,13 @@ dependencies {
 	implementation 'org.apache.camel:camel-activemq-starter:3.0.0-RC3'
 	implementation 'org.apache.camel:camel-spring-boot-starter:2.25.4'
 
+		compileOnly 'org.projectlombok:lombok:1.18.22'
+		annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+		testCompileOnly 'org.projectlombok:lombok:1.18.22'
+		testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+
 }
 
 test {
