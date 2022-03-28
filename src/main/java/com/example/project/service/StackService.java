@@ -15,9 +15,10 @@ public class StackService<i, a> {
             a[++top] = num;
             System.out.println(num + " pushed into stack");
         }
+        System.out.println("Stack");
         for (i = 1; i <= top; i++)
         {
-            System.out.println("Stack");
+
             System.out.println(a[i]);
         }
     }

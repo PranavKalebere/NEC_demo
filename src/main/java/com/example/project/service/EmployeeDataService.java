@@ -11,8 +11,7 @@ public class EmployeeDataService
     @Autowired
     public EmployeeDataRepository employeeDataRepository;
 
-    public void checkIdIsPresent(int id)
-    {
+    public void checkIdIsPresent(int id) throws Exception {
 
         if(employeeDataRepository.getById(id)!=null)
         {
@@ -21,7 +20,7 @@ public class EmployeeDataService
         }
         else
         {
-            System.out.println("This Id is not Present");
+            throw new Exception();
         }
     }
 }

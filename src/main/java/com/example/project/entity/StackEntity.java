@@ -9,6 +9,9 @@ public class StackEntity
     @Id
     private int num;
 
+    public StackEntity() {
+    }
+
     public StackEntity(int num) {
         this.num = num;
     }
